@@ -1,5 +1,12 @@
 # bevy_tdd_book_hello_world
 
+[![Check build](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_build.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_build.yaml)
+[![Check links](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_links.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_links.yaml)
+[![Check markdown](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_markdown.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_markdown.yaml)
+[![Check spelling](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_spelling.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/check_spelling.yaml)
+[![Measure code coverage](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/measure_codecov.yaml/badge.svg?branch=master)](https://github.com/richelbilderbeek/bevy_tdd_book_hello_world/actions/workflows/measure_codecov.yaml)
+[![codecov](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_hello_world/graph/badge.svg?token=XAVFZYDQKZ)](https://codecov.io/gh/richelbilderbeek/bevy_tdd_book_hello_world)
+
 'Hello world' code for [https://github.com/richelbilderbeek/bevy_tdd_book](https://github.com/richelbilderbeek/bevy_tdd_book)
 
 First, we follow the steps of the [Bevy setup](https://bevyengine.org/learn/quick-start/getting-started/setup/):
