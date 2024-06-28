@@ -1,2 +1,58 @@
-# -bevy_tdd_book_hello_world
+# bevy_tdd_book_hello_world
+
 'Hello world' code for https://github.com/richelbilderbeek/bevy_tdd_book
+
+First, we follow the steps of the [Bevy setup](https://bevyengine.org/learn/quick-start/getting-started/setup/):
+
+```bash
+git clone https://github.com/richelbilderbeek/bevy_tdd_book_hello_world
+cd bevy_tdd_book_hello_world
+cargo init
+cargo add bevy
+cargo add bevy -F dynamic_linking
+```
+
+To [Cargo.toml](Cargo.toml) add:
+
+```bash
+# Enable a small amount of optimization in debug mode
+[profile.dev]
+opt-level = 1
+
+# Enable high optimizations for dependencies (incl. Bevy), but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
+```
+
+To [.cargo/config.toml](.cargo/config.toml) add:
+
+```bash
+[target.x86_64-unknown-linux-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+```
+
+Code:
+
+```rust
+use bevy::prelude::*;
+
+fn main() {
+    let mut app = App::new();
+    app.run();
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_testing() {
+        assert_eq!(1 + 1, 2)
+    }
+}
+```
+
+## References
+
+ * [Bevy setup](https://bevyengine.org/learn/quick-start/getting-started/setup/)
