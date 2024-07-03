@@ -2,7 +2,7 @@ use bevy::prelude::*;
 
 /// Create a Bevy app
 pub fn create_app() -> App {
-    return App::new();
+    App::new()
 }
 
 #[cfg(test)]
